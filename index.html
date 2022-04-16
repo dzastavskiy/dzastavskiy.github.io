@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="libs/jquery.fancybox.css" />
+  </head>
+  <body>
+    <div class="hidden">
+      <a
+        class="main-item"
+        data-fancybox="1"
+        href="https://www.youtube.com/watch?v=2aBtDz87UK0&list=RD2aBtDz87UK0&start_radio=1&ab_channel=PatrikPietschmann"
+        ><img src="img/about/2.jpg" alt="#"
+      /></a>
+      <a
+        class="main-item"
+        data-fancybox="1"
+        href="https://www.youtube.com/watch?v=RIDA6elhmBU&ab_channel=KevinPowell"
+        ><img src="img/about/3.jpg" alt="#"
+      /></a>
+
+      <img src="img/blog/2.jpg" alt="" data-fancybox="2" />
+      <img src="img/blog/3.jpg" alt="" data-fancybox="2" />
+      <img src="img/blog/penis-standing-erect.gif" alt="" data-fancybox="2" />
+
+      <img src="img/contacts/2.png" alt="" data-fancybox="3" />
+      <img src="img/contacts/3.png" alt="" data-fancybox="3" />
+    </div>
+
+    <section class="main">
+      <div class="main-container">
+        <div class="main-wrapper">
+          <a
+            class="main-item"
+            data-fancybox="1"
+            href="https://www.youtube.com/watch?v=mrvWHfH5pm0&ab_channel=Skillthrive"
+          >
+            <div class="main-item__img">
+              <img src="img/about/1.jpg" alt="#" />
+            </div>
+          </a>
+
+          <a class="main-item" data-fancybox="2" href="img/blog/1.jpg">
+            <div class="main-item__img">
+              <img src="img/blog/1.jpg" alt="#" />
+            </div>
+          </a>
+          <a class="main-item" data-fancybox="3" href="img/contacts/1.png">
+            <div class="main-item__img">
+              <img src="img/contacts/1.png" alt="#" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="libs/jquery.fancybox.min.js"></script>
+    <script>
+      $(".main-item").fancybox({
+        thumbs: {
+          autoStart: true,
+        },
+        infobar: true,
+        buttons: ["close"],
+        wheel: "false",
+      });
+    </script>
+  </body>
+</html>
